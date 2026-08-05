@@ -1,13 +1,5 @@
 class SiteNav extends HTMLElement {
   connectedCallback() {
-    // Detect if current path is inside /pages/ directory
-    const isSubpage = window.location.pathname.includes('/pages/');
-
-    // Set clean, explicit relative paths
-    const homePath = isSubpage ? '../index.html' : './index.html';
-    const featuresPath = isSubpage ? '.features.html' : './pages/features.html';
-    const pricingPath = isSubpage ? '.pricing.html' : './pages/pricing.html';
-    const videoTourPath = isSubpage ? '..index.html#video-demo' : '#video-demo';
     const demoUrl = 'https://freelancer.srcs.online/index.html?demo=true';
 
     this.innerHTML = `
@@ -21,9 +13,9 @@ class SiteNav extends HTMLElement {
 
           <!-- Centralized Nav Links -->
           <div class="hidden md:flex space-x-8 text-sm font-medium text-[#6B7280]">
-            <a href="#video-demo" class="hover:text-[#1C1C1E] transition-colors">Video Tour</a>
-            <a href="features.html" class="hover:text-[#1C1C1E] transition-colors">Features</a>
-            <a href="pricing.html" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
+            <a href="index.html/#video-demo" class="hover:text-[#1C1C1E] transition-colors">Video Tour</a>
+            <a href="pages/features.html" class="hover:text-[#1C1C1E] transition-colors">Features</a>
+            <a href="pages/pricing.html" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
           </div>
 
           <!-- Live Demo CTA -->
@@ -38,11 +30,19 @@ class SiteNav extends HTMLElement {
 
 class SiteFooter extends HTMLElement {
   connectedCallback() {
+    // Determine relative path depending on current subpage location
+    const isSubpage = window.location.pathname.includes('/pages/');
+    const privacyPath = isSubpage ? './privacy.html' : './pages/privacy.html';
+
     this.innerHTML = `
       <footer class="border-t border-[#1C1C1E]/5 py-12 bg-[#F5F4F2]/50 text-xs text-[#6B7280]">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2026 Freelancer OS. Designed for independent builders.</p>
-          <div class="font-mono">v1.0.0 — Dark Mode Native</div>
+          <p>© 2026 Sync Race Studios LLC dba Freelancer OS. All rights reserved.</p>
+          <div class="flex items-center space-x-6 font-mono">
+            <a href="${privacyPath}" class="hover:text-[#1C1C1E] transition-colors">Privacy Policy</a>
+            <span>•</span>
+            <span>v1.0.0</span>
+          </div>
         </div>
       </footer>
     `;
