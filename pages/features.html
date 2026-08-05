@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features — Freelancer OS</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="min-h-screen flex flex-col justify-between bg-[#FAFAF9] text-[#1C1C1E]">
 
+  <!-- Top Navigation -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-[#FAFAF9]/80 border-b border-[#1C1C1E]/5">
     <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main Navigation">
-      <a href="../index.html" class="flex items-center space-x-2 group">
+      <a href="/index.html" class="flex items-center space-x-2 group">
         <span class="w-2.5 h-2.5 rounded-full bg-[#059669] group-hover:scale-125 transition-transform"></span>
         <span class="font-mono font-bold text-sm tracking-wider uppercase text-[#1C1C1E]">Freelancer</span>
       </a>
 
       <div class="hidden md:flex space-x-8 text-sm font-medium text-[#6B7280]">
-        <a href="./features.html" class="text-[#1C1C1E] font-semibold">Features</a>
-        <a href="./pricing.html" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
+        <a href="/pages/features.html" class="text-[#1C1C1E] font-semibold">Features</a>
+        <a href="/pages/pricing.html" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
       </div>
 
       <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="bg-[#1C1C1E] text-[#FAFAF9] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#059669] transition-colors">
@@ -29,48 +30,113 @@
 
   <main class="max-w-6xl mx-auto px-6 py-20 flex-grow w-full">
     <div class="max-w-2xl mb-16">
-      <span class="font-mono text-xs text-[#059669] uppercase tracking-widest">Capabilities</span>
+      <span class="font-mono text-xs text-[#059669] uppercase tracking-widest">Modules & Capabilities</span>
       <h1 class="font-serif text-5xl mt-3">Built for deep work, not administrative bloat.</h1>
-      <p class="text-[#6B7280] mt-4">Every feature inside Freelancer OS is designed to remove context-switching and keep your client operations running smoothly.</p>
+      <p class="text-[#6B7280] mt-4">Every module inside Freelancer OS replaces scattered third-party apps with a unified dark-mode workspace.</p>
     </div>
 
-    <!-- Feature Matrix Grid -->
+    <!-- Complete 11 Feature Cards Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-        <span class="font-mono text-xs text-[#059669]">01 / DASHBOARD</span>
-        <h3 class="font-serif text-2xl mt-2 mb-2">KPIs & Financial Alerts</h3>
-        <p class="text-[#6B7280] text-sm">Real-time revenue, expense logs, overdue invoice alerts, and period filters.</p>
+
+      <!-- 1. Dashboard -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">01 / OVERVIEW</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Dashboard</h3>
+          <p class="text-[#6B7280] text-sm">KPI cards (revenue, expenses, outstanding, active projects) with period filter. Overdue invoice alerts and quick action bar.</p>
+        </div>
       </div>
 
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-        <span class="font-mono text-xs text-[#059669]">02 / CRM</span>
-        <h3 class="font-serif text-2xl mt-2 mb-2">Client Locker</h3>
-        <p class="text-[#6B7280] text-sm">Contact management with linked project histories, contracts, NDAs, and content agreements.</p>
+      <!-- 2. Clients -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">02 / CRM</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Clients</h3>
+          <p class="text-[#6B7280] text-sm">Client card grid with full client file — contact info, linked projects, invoices, and document storage (contracts, NDAs, content forms, service agreements).</p>
+        </div>
       </div>
 
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-        <span class="font-mono text-xs text-[#059669]">03 / INVOICING</span>
-        <h3 class="font-serif text-2xl mt-2 mb-2">jsPDF Invoice Generator</h3>
-        <p class="text-[#6B7280] text-sm">Line-item invoice status flow (Draft → Sent → Paid) with instantaneous PDF export without popups.</p>
+      <!-- 3. Projects -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">03 / MANAGEMENT</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Projects</h3>
+          <p class="text-[#6B7280] text-sm">Project cards with status filter. Per-project file with description, budget, deadline, connection credentials, and an iPhone-style to-do list with priorities and due dates.</p>
+        </div>
       </div>
 
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-        <span class="font-mono text-xs text-[#059669]">04 / WORKFLOWS</span>
-        <h3 class="font-serif text-xl mt-2 mb-2">Live SOP Engine</h3>
-        <p class="text-[#6B7280] text-sm">Create reusable process templates. Trigger live client-linked step-by-step runs with real-time notes.</p>
+      <!-- 4. Finances -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">04 / ACCOUNTING</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Finances</h3>
+          <p class="text-[#6B7280] text-sm">Income/expense log with period filter, project/client linking, tax estimates, and per-project income breakdown.</p>
+        </div>
       </div>
 
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-        <span class="font-mono text-xs text-[#059669]">05 / SECURITY</span>
-        <h3 class="font-serif text-2xl mt-2 mb-2">PIN Credential Vault</h3>
-        <p class="text-[#6B7280] text-sm">PIN-protected credential storage for client email logins, site passwords, and API keys.</p>
+      <!-- 5. Invoices -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">05 / BILLING</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Invoices</h3>
+          <p class="text-[#6B7280] text-sm">Line-item invoices with PDF export (via jsPDF — no popup). Complete Draft &rarr; Sent &rarr; Paid / Void flow.</p>
+        </div>
       </div>
 
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-        <span class="font-mono text-xs text-[#059669]">06 / TECH STACK</span>
-        <h3 class="font-serif text-2xl mt-2 mb-2">Subscription Burn Tracker</h3>
-        <p class="text-[#6B7280] text-sm">Monitor software overhead, annual SaaS spend, and total monthly recurring expenses.</p>
+      <!-- 6. Business Plan -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">06 / STRATEGY</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Business Plan</h3>
+          <p class="text-[#6B7280] text-sm">Mission, vision, market, revenue model, SWOT analysis, and goals tracker (90-day / 1-year / 5-year) with plain-text export.</p>
+        </div>
       </div>
+
+      <!-- 7. Bookmarks -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">07 / VAULT</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Bookmarks</h3>
+          <p class="text-[#6B7280] text-sm">Website and tool manager with PIN-protected credential storage (email, username, password) and monthly cost tracking.</p>
+        </div>
+      </div>
+
+      <!-- 8. Tech Stack -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">08 / SAAS BURN</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Tech Stack</h3>
+          <p class="text-[#6B7280] text-sm">Recurring subscription tracker — calculates monthly burn rate and annual total, grouped by category.</p>
+        </div>
+      </div>
+
+      <!-- 9. Workflows -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">09 / SYSTEMS</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Workflows</h3>
+          <p class="text-[#6B7280] text-sm">Reusable SOP templates with ordered steps. Start a live "run" linked to a client or project and tick off steps with real-time notes.</p>
+        </div>
+      </div>
+
+      <!-- 10. Brainstorm -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">10 / IDEATION</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Brainstorm</h3>
+          <p class="text-[#6B7280] text-sm">Guided thinking sessions (New Service Idea, Client Pitch, Quarterly Goals, Problem Solving) or free-form notes with tag filtering.</p>
+        </div>
+      </div>
+
+      <!-- 11. Account & Settings -->
+      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+        <div>
+          <span class="font-mono text-xs text-[#059669]">11 / SYSTEM CONFIG</span>
+          <h3 class="font-serif text-2xl mt-2 mb-2">Account & Settings</h3>
+          <p class="text-[#6B7280] text-sm">Display name, business name, currency, tax rate, timezone, credential PIN setup, and password management.</p>
+        </div>
+      </div>
+
     </div>
   </main>
 
