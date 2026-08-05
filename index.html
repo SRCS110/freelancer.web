@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer OS — Command Center for Independents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/components.js" defer></script>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#059669]/20 selection:text-[#059669]">
+
+  <!-- Centralized Header Nav -->
+  <site-nav></site-nav>
+
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
+      <span class="font-mono text-xs text-[#059669] uppercase tracking-widest bg-[#059669]/10 px-3 py-1 rounded-full border border-[#059669]/20">
+        Dark-Mode Business OS
+      </span>
+      <h1 class="font-serif text-5xl md:text-7xl font-normal tracking-tight mt-6 max-w-4xl mx-auto leading-[1.1]">
+        The command center for your independent business.
+      </h1>
+      <p class="text-lg md:text-xl text-[#6B7280] max-w-2xl mx-auto mt-6">
+        Replace scattered spreadsheets, notes apps, and invoicing tools with a single, sleek dashboard built specifically for freelancers and micro-studios.
+      </p>
+      
+      <!-- Live HTML/CSS Mini-Dashboard Mockup -->
+      <div class="mt-12 text-left rounded-xl bg-[#09090B] border border-white/10 p-6 shadow-2xl text-white max-w-4xl mx-auto">
+        <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+            <span class="ml-2 text-zinc-500">freelancer.app/dashboard</span>
+          </div>
+          <span class="text-[#059669] bg-[#059669]/10 px-2 py-0.5 rounded">● Active Session</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
+            <div class="text-[10px] text-zinc-500 font-mono">NET REVENUE (MTD)</div>
+            <div class="text-2xl font-bold mt-1 text-white">$14,250.00</div>
+            <div class="text-[11px] text-[#059669] mt-1">+22% vs last month</div>
+          </div>
+          <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
+            <div class="text-[10px] text-zinc-500 font-mono">OUTSTANDING INVOICES</div>
+            <div class="text-2xl font-bold mt-1 text-white">$3,800.00</div>
+            <div class="text-[11px] text-amber-500 mt-1">2 invoices pending</div>
+          </div>
+          <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
+            <div class="text-[10px] text-zinc-500 font-mono">ACTIVE SOP RUNS</div>
+            <div class="text-2xl font-bold mt-1 text-white">4 Live Workflows</div>
+            <div class="text-[11px] text-zinc-400 mt-1">Acme Corp Onboarding</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Value Section -->
+    <section class="border-t border-[#1C1C1E]/5 py-20 bg-[#F5F4F2]/30">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="font-serif text-3xl md:text-4xl text-center mb-16">Everything you need to run a solo studio.</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
+            <span class="font-mono text-xs text-[#6B7280]">01 / FINANCIALS</span>
+            <h3 class="font-serif text-xl mt-3 mb-2">Invoices & Tax Estimates</h3>
+            <p class="text-sm text-[#6B7280]">Line-item invoices with PDF export and real-time tax hold calculations.</p>
+          </div>
+          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
+            <span class="font-mono text-xs text-[#6B7280]">02 / CLIENTS & PROJECTS</span>
+            <h3 class="font-serif text-xl mt-3 mb-2">Integrated Client Files</h3>
+            <p class="text-sm text-[#6B7280]">Store contracts, credentials, and iPhone-style project lists side-by-side.</p>
+          </div>
+          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
+            <span class="font-mono text-xs text-[#6B7280]">03 / SYSTEMS</span>
+            <h3 class="font-serif text-xl mt-3 mb-2">Live SOP Workflows</h3>
+            <p class="text-sm text-[#6B7280]">Turn strategy templates into live client-linked step-by-step checklists.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Centralized Footer -->
+  <site-footer></site-footer>
+
+</body>
+</html>
