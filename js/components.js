@@ -71,3 +71,63 @@ function updateThemeToggleUI() {
   if (label) label.textContent = isDark ? 'dark' : 'light';
   if (button) button.setAttribute('aria-pressed', String(isDark));
 }
+
+class CookieConsent extends HTMLElement {
+  connectedCallback() {
+    // Do not display if user has already accepted or denied cookies
+    if (localStorage.getItem('cookie-consent')) return;
+
+    const isSubpage = window.location.pathname.includes('/pages/');
+    const privacyPath = isSubpage ? 'privacy.html' : 'pages/privacy.html';
+
+    this.innerHTML = `
+      <div id="cookie-banner" class="fixed bottom-4 right-4 left-4 sm:left-auto sm:max-w-md z-50 bg-[#1C1C1E] text-[#FAFAF9] p-5 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-md font-sans text-xs">
+        <div class="flex items-start justify-between gap-3 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-[#059669]"></span>
+            <h4 class="font-mono font-bold tracking-wider uppercase text-xs text-white">Cookie Preferences</h4>
+          </div>
+        </div>
+        
+        <p class="text-zinc-400 leading-relaxed mb-4">
+          We use essential cookies and collect traffic diagnostics to ensure session security and app performance. We never sell or share your data. Read our <a href="${privacyPath}" class="text-[#059669] underline hover:text-emerald-400">Privacy Policy</a>.
+        </p>
+
+        <div class="flex items-center justify-end gap-2 font-mono">
+          <button 
+            id="cookie-deny" 
+            onclick="handleCookieChoice('denied')"
+            class="px-3.5 py-2 rounded-lg border border-white/10 text-zinc-400 hover:text-white hover:bg-white/5 transition-all">
+            Deny
+          </button>
+          <button 
+            id="cookie-accept" 
+            onclick="handleCookieChoice('accepted')"
+            class="px-4 py-2 rounded-lg bg-[#059669] text-white font-medium hover:bg-[#047857] transition-all">
+            Accept All
+          </button>
+        </div>
+      </div>
+    `;
+  }
+}
+
+customElements.define('cookie-consent', CookieConsent);
+
+// Handle Cookie Consent Choice
+function handleCookieChoice(status) {
+  localStorage.setItem('cookie-consent', status);
+  const banner = document.getElementById('cookie-banner');
+  if (banner) {
+    banner.style.opacity = '0';
+    banner.style.transition = 'opacity 0.2s ease-out';
+    setTimeout(() => banner.remove(), 200);
+  }
+
+  // Optional: Trigger analytics or non-essential cookies here if accepted
+  if (status === 'accepted') {
+    // enableAnalytics();
+  } else {
+    // disableNonEssentialCookies();
+  }
+}
