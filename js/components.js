@@ -1,17 +1,23 @@
 class SiteNav extends HTMLElement {
   connectedCallback() {
-    // Determine path prefix based on current page location
-    const isSubpage = window.location.pathname.includes('/pages/');
-    const homePath = isSubpage ? '../index.html' : './index.html';
-    const featuresPath = isSubpage ? './features.html' : './pages/features.html';
-    const pricingPath = isSubpage ? './pricing.html' : './pages/pricing.html';
-    const videoTourPath = isSubpage ? '../index.html#video-demo' : '#video-demo';
+    // Dynamically detect GitHub Pages repository root path
+    const pathSegments = window.location.pathname.split('/');
+    
+    // Check if hosted on GitHub Pages (e.g., /repo-name/pages/features.html)
+    const isGitHubPages = window.location.hostname.endsWith('github.io');
+    const repoBase = isGitHubPages && pathSegments[1] ? `/${pathSegments[1]}` : '';
+
+    // Generate absolute links relative to the site root/repo
+    const homePath = `${repoBase}/index.html`;
+    const featuresPath = `${repoBase}/pages/features.html`;
+    const pricingPath = `${repoBase}/pages/pricing.html`;
+    const videoTourPath = `${repoBase}/index.html#video-demo`;
     const demoUrl = 'https://freelancer.srcs.online/index.html?demo=true';
 
     this.innerHTML = `
       <header class="sticky top-0 z-50 backdrop-blur-md bg-[#FAFAF9]/80 border-b border-[#1C1C1E]/5">
         <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main Navigation">
-          <!-- Logo / Brand -->
+          <!-- Logo / Brand (Points back to root homepage) -->
           <a href="${homePath}" class="flex items-center space-x-2 group">
             <span class="w-2.5 h-2.5 rounded-full bg-[#059669] group-hover:scale-125 transition-transform"></span>
             <span class="font-mono font-bold text-sm tracking-wider uppercase text-[#1C1C1E]">Freelancer</span>
