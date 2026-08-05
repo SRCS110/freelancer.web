@@ -22,8 +22,9 @@
         <a href="./pages/pricing.html" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
       </div>
 
-      <a href="./pages/pricing.html" class="bg-[#1C1C1E] text-[#FAFAF9] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#059669] transition-colors">
-        Get Freelancer
+      <!-- Demo CTA -->
+      <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="bg-[#1C1C1E] text-[#FAFAF9] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#059669] transition-colors">
+        Try Live Demo ↗
       </a>
     </nav>
   </header>
@@ -40,37 +41,49 @@
       <p class="text-lg md:text-xl text-[#6B7280] max-w-2xl mx-auto mt-6">
         Replace scattered spreadsheets, notes apps, and invoicing tools with a single, sleek dashboard built specifically for freelancers and micro-studios.
       </p>
-      
-      <!-- Live Interactive CSS App Mockup -->
-      <div class="mt-12 text-left rounded-xl bg-[#09090B] border border-white/10 p-6 shadow-2xl text-white max-w-4xl mx-auto">
-        <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
-          <div class="flex items-center space-x-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
-            <span class="ml-2 text-zinc-500">freelancer.app/dashboard</span>
-          </div>
-          <span class="text-[#059669] bg-[#059669]/10 px-2 py-0.5 rounded">● Active Session</span>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-          <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
-            <div class="text-[10px] text-zinc-500 font-mono">NET REVENUE (MTD)</div>
-            <div class="text-2xl font-bold mt-1 text-white">$14,250.00</div>
-            <div class="text-[11px] text-[#059669] mt-1">+22% vs last month</div>
+      <!-- Primary Action Buttons -->
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="bg-[#059669] text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-[#047857] transition-colors shadow-sm">
+          Launch Interactive Demo
+        </a>
+        <a href="./pages/pricing.html" class="bg-[#F5F4F2] text-[#1C1C1E] border border-[#1C1C1E]/10 px-6 py-3 rounded-lg font-medium text-sm hover:bg-white transition-colors">
+          View Pricing ($149)
+        </a>
+      </div>
+      
+      <!-- Interactive Mockup Wrapper (Clickable directly to demo) -->
+      <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="block mt-12 group">
+        <div class="text-left rounded-xl bg-[#09090B] border border-white/10 p-6 shadow-2xl text-white max-w-4xl mx-auto group-hover:border-[#059669]/50 transition-colors">
+          <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
+            <div class="flex items-center space-x-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+              <span class="ml-2 text-zinc-500">freelancer.srcs.online/?demo=true</span>
+            </div>
+            <span class="text-[#059669] bg-[#059669]/10 px-2 py-0.5 rounded group-hover:bg-[#059669] group-hover:text-white transition-colors">● Launch App ↗</span>
           </div>
-          <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
-            <div class="text-[10px] text-zinc-500 font-mono">OUTSTANDING INVOICES</div>
-            <div class="text-2xl font-bold mt-1 text-white">$3,800.00</div>
-            <div class="text-[11px] text-amber-500 mt-1">2 invoices pending</div>
-          </div>
-          <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
-            <div class="text-[10px] text-zinc-500 font-mono">ACTIVE SOP RUNS</div>
-            <div class="text-2xl font-bold mt-1 text-white">4 Live Workflows</div>
-            <div class="text-[11px] text-zinc-400 mt-1">Acme Corp Onboarding</div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
+              <div class="text-[10px] text-zinc-500 font-mono">NET REVENUE (MTD)</div>
+              <div class="text-2xl font-bold mt-1 text-white">$14,250.00</div>
+              <div class="text-[11px] text-[#059669] mt-1">+22% vs last month</div>
+            </div>
+            <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
+              <div class="text-[10px] text-zinc-500 font-mono">OUTSTANDING INVOICES</div>
+              <div class="text-2xl font-bold mt-1 text-white">$3,800.00</div>
+              <div class="text-[11px] text-amber-500 mt-1">2 invoices pending</div>
+            </div>
+            <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
+              <div class="text-[10px] text-zinc-500 font-mono">ACTIVE SOP RUNS</div>
+              <div class="text-2xl font-bold mt-1 text-white">4 Live Workflows</div>
+              <div class="text-[11px] text-zinc-400 mt-1">Acme Corp Onboarding</div>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </section>
 
     <!-- Value Preview Strip -->
