@@ -20,19 +20,11 @@ class SiteNav extends HTMLElement {
 
           <!-- NAVIGATION LINKS -->
           <nav class="flex flex-wrap items-center gap-2 font-mono text-sm">
-            <a href="${videoPath}" class="px-3 py-1.5 rounded text-[#6B7280] hover:bg-[#F5F4F2] hover:text-[#1C1C1E] transition-all">/tour</a>
-            <a href="${featuresPath}" class="px-3 py-1.5 rounded text-[#6B7280] hover:bg-[#F5F4F2] hover:text-[#1C1C1E] transition-all">/features</a>
-            <a href="${pricingPath}" class="px-3 py-1.5 rounded text-[#6B7280] hover:bg-[#F5F4F2] hover:text-[#1C1C1E] transition-all">/pricing</a>
+            <a href="${videoPath}" class="px-3 py-1.5 rounded text-[#6B7280] hover:bg-[#F5F4F2] hover:text-[#1C1C1E] transition-all">tour</a>
+            <a href="${featuresPath}" class="px-3 py-1.5 rounded text-[#6B7280] hover:bg-[#F5F4F2] hover:text-[#1C1C1E] transition-all">features</a>
+            <a href="${pricingPath}" class="px-3 py-1.5 rounded text-[#6B7280] hover:bg-[#F5F4F2] hover:text-[#1C1C1E] transition-all">pricing</a>
             <a href="${demoUrl}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-[#059669]/10 text-[#059669] hover:bg-[#059669] hover:text-white font-bold transition-all">!demo ↗</a>
             
-            <button
-              id="theme-toggle"
-              type="button"
-              onclick="toggleSiteTheme()"
-              aria-label="Toggle light and dark theme"
-              aria-pressed="false"
-              class="px-3 py-1.5 rounded border border-[#1C1C1E]/10 text-[#6B7280] hover:text-[#1C1C1E] hover:border-[#1C1C1E] transition-all"
-            >// <span id="theme-toggle-label">light</span></button>
           </nav>
 
         </div>
