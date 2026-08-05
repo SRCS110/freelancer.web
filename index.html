@@ -38,40 +38,86 @@
         </a>
       </div>
       
-      <!-- Interactive Mockup Wrapper -->
-      <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="block mt-12 group">
-        <div class="text-left rounded-xl bg-[#09090B] border border-white/10 p-6 shadow-2xl text-white max-w-4xl mx-auto group-hover:border-[#059669]/50 transition-colors">
-          <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
-            <div class="flex items-center space-x-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-              <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
-              <span class="ml-2 text-zinc-500">freelancer.srcs.online/?demo=true</span>
-            </div>
-            <span class="text-[#059669] bg-[#059669]/10 px-2 py-0.5 rounded group-hover:bg-[#059669] group-hover:text-white transition-colors">● Launch App ↗</span>
-          </div>
+<!-- Live Dashboard Mockup (Modelled directly after actual UI) -->
+<a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="block mt-12 group">
+  <div class="text-left rounded-xl bg-[#111116] border border-white/10 p-6 shadow-2xl text-white max-w-5xl mx-auto group-hover:border-[#059669]/50 transition-colors">
+    <!-- Window Header -->
+    <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
+      <div class="flex items-center space-x-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+        <span class="ml-2 text-zinc-500">freelancer.srcs.online/?demo=true</span>
+      </div>
+      <span class="text-[#059669] bg-[#059669]/10 px-2 py-0.5 rounded group-hover:bg-[#059669] group-hover:text-white transition-colors">● Launch App ↗</span>
+    </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-            <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
-              <div class="text-[10px] text-zinc-500 font-mono">NET REVENUE (MTD)</div>
-              <div class="text-2xl font-bold mt-1 text-white">$14,250.00</div>
-              <div class="text-[11px] text-[#059669] mt-1">+22% vs last month</div>
-            </div>
-            <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
-              <div class="text-[10px] text-zinc-500 font-mono">OUTSTANDING INVOICES</div>
-              <div class="text-2xl font-bold mt-1 text-white">$3,800.00</div>
-              <div class="text-[11px] text-amber-500 mt-1">2 invoices pending</div>
-            </div>
-            <div class="bg-zinc-900/80 p-4 rounded-lg border border-white/5">
-              <div class="text-[10px] text-zinc-500 font-mono">ACTIVE SOP RUNS</div>
-              <div class="text-2xl font-bold mt-1 text-white">4 Live Workflows</div>
-              <div class="text-[11px] text-zinc-400 mt-1">Acme Corp Onboarding</div>
-            </div>
+    <!-- KPI Metric Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+      
+      <!-- Card 1: Revenue -->
+      <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="text-[#10B981] text-xs">◆</span>
           </div>
+          <div class="text-zinc-500 text-xs mt-1">◇</div>
+          <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">REVENUE</div>
         </div>
-      </a>
-    </section>
+        <div>
+          <div class="text-2xl font-semibold text-[#10B981] tracking-tight">$0.00</div>
+          <div class="text-[11px] text-zinc-500 mt-1">This Month</div>
+        </div>
+      </div>
 
+      <!-- Card 2: Expenses -->
+      <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="text-[#F59E0B] text-xs">◆</span>
+          </div>
+          <div class="text-zinc-500 text-xs mt-1">❖</div>
+          <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">EXPENSES</div>
+        </div>
+        <div>
+          <div class="text-2xl font-semibold text-[#F59E0B] tracking-tight">$0.00</div>
+          <div class="text-[11px] text-zinc-500 mt-1">This Month</div>
+        </div>
+      </div>
+
+      <!-- Card 3: Outstanding -->
+      <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="text-[#F43F5E] text-xs">◆</span>
+          </div>
+          <div class="text-zinc-500 text-xs mt-1">▢</div>
+          <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">OUTSTANDING</div>
+        </div>
+        <div>
+          <div class="text-2xl font-semibold text-[#F43F5E] tracking-tight">$4,225.00</div>
+          <div class="text-[11px] text-zinc-500 mt-1">2 unpaid</div>
+        </div>
+      </div>
+
+      <!-- Card 4: Active Projects -->
+      <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="text-[#6366F1] text-xs">◆</span>
+          </div>
+          <div class="text-zinc-500 text-xs mt-1">◫</div>
+          <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">ACTIVE PROJECTS</div>
+        </div>
+        <div>
+          <div class="text-2xl font-semibold text-[#818CF8] tracking-tight">2</div>
+          <div class="text-[11px] text-zinc-500 mt-1">5 total</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</a>
     <!-- Video Demo Section -->
     <section id="video-demo" class="border-t border-[#1C1C1E]/5 py-20 bg-[#F5F4F2]/60 scroll-mt-12">
       <div class="max-w-5xl mx-auto px-6">
