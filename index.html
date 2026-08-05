@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freelancer OS — Command Center for Independents</title>
+  <title>Rogue OS — Command Center for Independents</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- Load Centralized Web Components -->
+  <!-- Load Centralized Sync Race Style Web Components -->
   <script src="./js/components.js" defer></script>
 </head>
 <body class="min-h-screen flex flex-col justify-between bg-[#FAFAF9] text-[#1C1C1E]">
@@ -18,13 +18,13 @@
     <!-- Hero Section -->
     <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
       <span class="font-mono text-xs text-[#059669] uppercase tracking-widest bg-[#059669]/10 px-3 py-1 rounded-full border border-[#059669]/20">
-        Independent Business OS
+        Dark-Mode Business OS
       </span>
       <h1 class="font-serif text-5xl md:text-7xl font-normal tracking-tight mt-6 max-w-4xl mx-auto leading-[1.1]">
         The command center for your independent business.
       </h1>
       <p class="text-lg md:text-xl text-[#6B7280] max-w-2xl mx-auto mt-6">
-        Replace scattered spreadsheets, notes apps, and invoicing tools with a single, sleek dashboard built specifically for freelancers and micro-studios.
+        Replace scattered spreadsheets, notes apps, and invoicing tools with a single, sleek dashboard built specifically for solo operators and micro-studios.
       </p>
 
       <!-- Action Buttons -->
@@ -38,86 +38,88 @@
         </a>
       </div>
       
-<!-- Live Dashboard Mockup (Modelled directly after actual UI) -->
-<a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="block mt-12 group">
-  <div class="text-left rounded-xl bg-[#111116] border border-white/10 p-6 shadow-2xl text-white max-w-5xl mx-auto group-hover:border-[#059669]/50 transition-colors">
-    <!-- Window Header -->
-    <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
-      <div class="flex items-center space-x-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-        <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-        <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
-        <span class="ml-2 text-zinc-500">freelancer.srcs.online/?demo=true</span>
-      </div>
-      <span class="text-[#059669] bg-[#059669]/10 px-2 py-0.5 rounded group-hover:bg-[#059669] group-hover:text-white transition-colors">● Launch App ↗</span>
-    </div>
-
-    <!-- KPI Metric Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
-      
-      <!-- Card 1: Revenue -->
-      <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="text-[#10B981] text-xs">◆</span>
+      <!-- Live Dashboard Mockup (Modelled directly after actual UI) -->
+      <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="block mt-12 group">
+        <div class="text-left rounded-xl bg-[#111116] border border-white/10 p-6 shadow-2xl text-white max-w-5xl mx-auto group-hover:border-[#059669]/50 transition-colors">
+          <!-- Window Header -->
+          <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
+            <div class="flex items-center space-x-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+              <span class="ml-2 text-zinc-500">rogue.srcs.online/?demo=true</span>
+            </div>
+            <span class="text-[#059669] bg-[#059669]/10 px-2 py-0.5 rounded group-hover:bg-[#059669] group-hover:text-white transition-colors">● Launch App ↗</span>
           </div>
-          <div class="text-zinc-500 text-xs mt-1">◇</div>
-          <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">REVENUE</div>
-        </div>
-        <div>
-          <div class="text-2xl font-semibold text-[#10B981] tracking-tight">$14,462.00</div>
-          <div class="text-[11px] text-zinc-500 mt-1">This Month</div>
-        </div>
-      </div>
 
-      <!-- Card 2: Expenses -->
-      <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="text-[#F59E0B] text-xs">◆</span>
+          <!-- KPI Metric Cards Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+            
+            <!-- Card 1: Revenue -->
+            <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-[#10B981] text-xs">◆</span>
+                </div>
+                <div class="text-zinc-500 text-xs mt-1">◇</div>
+                <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">REVENUE</div>
+              </div>
+              <div>
+                <div class="text-2xl font-semibold text-[#10B981] tracking-tight">$0.00</div>
+                <div class="text-[11px] text-zinc-500 mt-1">This Month</div>
+              </div>
+            </div>
+
+            <!-- Card 2: Expenses -->
+            <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-[#F59E0B] text-xs">◆</span>
+                </div>
+                <div class="text-zinc-500 text-xs mt-1">❖</div>
+                <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">EXPENSES</div>
+              </div>
+              <div>
+                <div class="text-2xl font-semibold text-[#F59E0B] tracking-tight">$0.00</div>
+                <div class="text-[11px] text-zinc-500 mt-1">This Month</div>
+              </div>
+            </div>
+
+            <!-- Card 3: Outstanding -->
+            <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-[#F43F5E] text-xs">◆</span>
+                </div>
+                <div class="text-zinc-500 text-xs mt-1">▢</div>
+                <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">OUTSTANDING</div>
+              </div>
+              <div>
+                <div class="text-2xl font-semibold text-[#F43F5E] tracking-tight">$4,225.00</div>
+                <div class="text-[11px] text-zinc-500 mt-1">2 unpaid</div>
+              </div>
+            </div>
+
+            <!-- Card 4: Active Projects -->
+            <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-[#6366F1] text-xs">◆</span>
+                </div>
+                <div class="text-zinc-500 text-xs mt-1">◫</div>
+                <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">ACTIVE PROJECTS</div>
+              </div>
+              <div>
+                <div class="text-2xl font-semibold text-[#818CF8] tracking-tight">2</div>
+                <div class="text-[11px] text-zinc-500 mt-1">5 total</div>
+              </div>
+            </div>
+
           </div>
-          <div class="text-zinc-500 text-xs mt-1">❖</div>
-          <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">EXPENSES</div>
         </div>
-        <div>
-          <div class="text-2xl font-semibold text-[#F59E0B] tracking-tight">$2,354.00</div>
-          <div class="text-[11px] text-zinc-500 mt-1">This Month</div>
-        </div>
-      </div>
+      </a>
+    </section>
 
-      <!-- Card 3: Outstanding -->
-      <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="text-[#F43F5E] text-xs">◆</span>
-          </div>
-          <div class="text-zinc-500 text-xs mt-1">▢</div>
-          <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">OUTSTANDING</div>
-        </div>
-        <div>
-          <div class="text-2xl font-semibold text-[#F43F5E] tracking-tight">$4,225.00</div>
-          <div class="text-[11px] text-zinc-500 mt-1">2 unpaid</div>
-        </div>
-      </div>
-
-      <!-- Card 4: Active Projects -->
-      <div class="bg-[#16161D] p-5 rounded-lg border border-white/5 font-mono flex flex-col justify-between h-36">
-        <div>
-          <div class="flex items-center justify-between">
-            <span class="text-[#6366F1] text-xs">◆</span>
-          </div>
-          <div class="text-zinc-500 text-xs mt-1">◫</div>
-          <div class="text-[10px] text-zinc-400 tracking-wider uppercase mt-3">ACTIVE PROJECTS</div>
-        </div>
-        <div>
-          <div class="text-2xl font-semibold text-[#818CF8] tracking-tight">3</div>
-          <div class="text-[11px] text-zinc-500 mt-1">8 total</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</a>
     <!-- Video Demo Section -->
     <section id="video-demo" class="border-t border-[#1C1C1E]/5 py-20 bg-[#F5F4F2]/60 scroll-mt-12">
       <div class="max-w-5xl mx-auto px-6">
@@ -125,7 +127,7 @@
           <span class="font-mono text-xs text-[#059669] uppercase tracking-widest bg-[#059669]/10 px-3 py-1 rounded-full border border-[#059669]/20">
             Product Walkthrough
           </span>
-          <h2 class="font-serif text-4xl md:text-5xl mt-4">See Freelancer OS in action.</h2>
+          <h2 class="font-serif text-4xl md:text-5xl mt-4">See Rogue OS in action.</h2>
           <p class="text-[#6B7280] text-sm md:text-base mt-3">
             Take a 2-minute tour through client lockers, live SOP runs, instant jsPDF invoice exports, and the dark-mode dashboard interface.
           </p>
@@ -135,7 +137,7 @@
           <video 
             controls 
             preload="metadata"
-            poster="https://via.placeholder.com/1280x720/09090B/059669?text=Click+to+Play+Freelancer+OS+Demo" 
+            poster="https://via.placeholder.com/1280x720/09090B/059669?text=Click+to+Play+Rogue+OS+Demo" 
             class="w-full h-full object-cover"
           >
             <source src="assets/demo-walkthrough.mp4" type="video/mp4">
@@ -202,7 +204,7 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: User Reviews & Social Proof CTA -->
+    <!-- User Reviews & Social Proof CTA -->
     <section class="border-t border-[#1C1C1E]/5 py-20 bg-[#F5F4F2]/40">
       <div class="max-w-6xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
@@ -219,7 +221,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="bg-[#FAFAF9] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
             <p class="text-[#1C1C1E] text-sm leading-relaxed italic">
-              "Freelancer OS completely replaced Notion and QuickBooks for my studio. The SOP runs and PIN vault alone save me hours every single week."
+              "Rogue OS completely replaced Notion and QuickBooks for my studio. The SOP runs and PIN vault alone save me hours every single week."
             </p>
             <div class="mt-6 pt-4 border-t border-[#1C1C1E]/5 flex items-center justify-between">
               <div>
