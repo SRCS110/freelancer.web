@@ -9,7 +9,7 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between bg-[#FAFAF9] text-[#1C1C1E]">
 
-  <!-- Top Navigation -->
+  <!-- Navigation -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-[#FAFAF9]/80 border-b border-[#1C1C1E]/5">
     <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main Navigation">
       <a href="./index.html" class="flex items-center space-x-2 group">
@@ -18,11 +18,11 @@
       </a>
 
       <div class="hidden md:flex space-x-8 text-sm font-medium text-[#6B7280]">
+        <a href="#video-demo" class="hover:text-[#1C1C1E] transition-colors">Video Tour</a>
         <a href="./pages/features.html" class="hover:text-[#1C1C1E] transition-colors">Features</a>
         <a href="./pages/pricing.html" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
       </div>
 
-      <!-- Demo CTA -->
       <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="bg-[#1C1C1E] text-[#FAFAF9] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#059669] transition-colors">
         Try Live Demo ↗
       </a>
@@ -42,17 +42,18 @@
         Replace scattered spreadsheets, notes apps, and invoicing tools with a single, sleek dashboard built specifically for freelancers and micro-studios.
       </p>
 
-      <!-- Primary Action Buttons -->
+      <!-- Action Buttons -->
       <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-        <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="bg-[#059669] text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-[#047857] transition-colors shadow-sm">
-          Launch Interactive Demo
+        <a href="#video-demo" class="bg-[#1C1C1E] text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-[#059669] transition-colors shadow-sm flex items-center justify-center gap-2">
+          <span>Watch 2-Min Walkthrough</span>
+          <span class="text-xs opacity-75">▶</span>
         </a>
-        <a href="./pages/pricing.html" class="bg-[#F5F4F2] text-[#1C1C1E] border border-[#1C1C1E]/10 px-6 py-3 rounded-lg font-medium text-sm hover:bg-white transition-colors">
-          View Pricing ($149)
+        <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="bg-[#F5F4F2] text-[#1C1C1E] border border-[#1C1C1E]/10 px-6 py-3 rounded-lg font-medium text-sm hover:bg-white transition-colors flex items-center justify-center">
+          Launch Interactive Demo ↗
         </a>
       </div>
       
-      <!-- Interactive Mockup Wrapper (Clickable directly to demo) -->
+      <!-- Interactive Mockup Wrapper -->
       <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="block mt-12 group">
         <div class="text-left rounded-xl bg-[#09090B] border border-white/10 p-6 shadow-2xl text-white max-w-4xl mx-auto group-hover:border-[#059669]/50 transition-colors">
           <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
@@ -86,13 +87,87 @@
       </a>
     </section>
 
-    <!-- Value Preview Strip -->
-    <section class="border-t border-[#1C1C1E]/5 py-16 bg-[#F5F4F2]/50">
-      <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="font-serif text-3xl mb-6">Built to streamline your entire client pipeline.</h2>
-        <a href="./pages/features.html" class="inline-flex items-center text-sm font-medium text-[#059669] hover:underline">
-          Explore full feature breakdown &rarr;
-        </a>
+    <!-- Video Demo Section -->
+    <section id="video-demo" class="border-t border-[#1C1C1E]/5 py-20 bg-[#F5F4F2]/60 scroll-mt-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="font-mono text-xs text-[#059669] uppercase tracking-widest bg-[#059669]/10 px-3 py-1 rounded-full border border-[#059669]/20">
+            Product Walkthrough
+          </span>
+          <h2 class="font-serif text-4xl md:text-5xl mt-4">See Freelancer OS in action.</h2>
+          <p class="text-[#6B7280] text-sm md:text-base mt-3">
+            Take a 2-minute tour through client lockers, live SOP runs, instant jsPDF invoice exports, and the dark-mode dashboard interface.
+          </p>
+        </div>
+
+        <div class="relative rounded-2xl overflow-hidden border border-[#1C1C1E]/10 shadow-xl bg-[#09090B] aspect-video max-w-4xl mx-auto">
+          <video 
+            controls 
+            preload="metadata"
+            poster="https://via.placeholder.com/1280x720/09090B/059669?text=Click+to+Play+Freelancer+OS+Demo" 
+            class="w-full h-full object-cover"
+          >
+            <source src="assets/demo-walkthrough.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="absolute top-4 right-4 pointer-events-none">
+            <span class="font-mono text-[10px] uppercase bg-[#1C1C1E]/80 backdrop-blur-md text-white px-2.5 py-1 rounded border border-white/10">
+              02:15 HD Walkthrough
+            </span>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center text-xs text-[#6B7280] font-mono">
+          Prefer hands-on testing? 
+          <a href="https://freelancer.srcs.online/index.html?demo=true" target="_blank" rel="noopener noreferrer" class="text-[#059669] hover:underline font-bold ml-1">
+            Open the live interactive web sandbox &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- First 3 Core Features Section -->
+    <section class="border-t border-[#1C1C1E]/5 py-20 bg-[#FAFAF9]">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="font-mono text-xs text-[#059669] uppercase tracking-widest">Core OS Features</span>
+          <h2 class="font-serif text-4xl mt-3">Engineered for your daily workflow.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- 01 / Dashboard -->
+          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+            <div>
+              <span class="font-mono text-xs text-[#059669]">01 / OVERVIEW</span>
+              <h3 class="font-serif text-2xl mt-2 mb-2">Dashboard</h3>
+              <p class="text-[#6B7280] text-sm">KPI cards (revenue, expenses, outstanding, active projects) with period filter. Overdue invoice alerts and quick action bar.</p>
+            </div>
+          </div>
+
+          <!-- 02 / Clients -->
+          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+            <div>
+              <span class="font-mono text-xs text-[#059669]">02 / CRM</span>
+              <h3 class="font-serif text-2xl mt-2 mb-2">Clients</h3>
+              <p class="text-[#6B7280] text-sm">Client card grid with full client file — contact info, linked projects, invoices, and document storage (contracts, NDAs, content forms, service agreements).</p>
+            </div>
+          </div>
+
+          <!-- 03 / Projects -->
+          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
+            <div>
+              <span class="font-mono text-xs text-[#059669]">03 / MANAGEMENT</span>
+              <h3 class="font-serif text-2xl mt-2 mb-2">Projects</h3>
+              <p class="text-[#6B7280] text-sm">Project cards with status filter. Per-project file with description, budget, deadline, connection credentials, and an iPhone-style to-do list with priorities and due dates.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="./pages/features.html" class="inline-flex items-center text-sm font-medium text-[#059669] hover:underline">
+            See all 11 modules on the features page &rarr;
+          </a>
+        </div>
       </div>
     </section>
   </main>
