@@ -21,9 +21,9 @@ class SiteNav extends HTMLElement {
 
           <!-- Centralized Nav Links -->
           <div class="hidden md:flex space-x-8 text-sm font-medium text-[#6B7280]">
-            <a href="${videoTourPath}" class="hover:text-[#1C1C1E] transition-colors">Video Tour</a>
-            <a href="${featuresPath}" class="hover:text-[#1C1C1E] transition-colors">Features</a>
-            <a href="${pricingPath}" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
+            <a href="#video-demo" class="hover:text-[#1C1C1E] transition-colors">Video Tour</a>
+            <a href="features" class="hover:text-[#1C1C1E] transition-colors">Features</a>
+            <a href="pricing" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
           </div>
 
           <!-- Live Demo CTA -->
