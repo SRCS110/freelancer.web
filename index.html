@@ -7,35 +7,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-[#059669]/20 selection:text-[#059669]">
+<body class="min-h-screen flex flex-col justify-between bg-[#FAFAF9] text-[#1C1C1E]">
 
-  <!-- Centralized Top Navigation -->
+  <!-- Top Navigation -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-[#FAFAF9]/80 border-b border-[#1C1C1E]/5">
     <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main Navigation">
-      <!-- Logo / Brand -->
       <a href="./index.html" class="flex items-center space-x-2 group">
         <span class="w-2.5 h-2.5 rounded-full bg-[#059669] group-hover:scale-125 transition-transform"></span>
         <span class="font-mono font-bold text-sm tracking-wider uppercase text-[#1C1C1E]">Freelancer</span>
       </a>
 
-      <!-- Direct Nav Links -->
       <div class="hidden md:flex space-x-8 text-sm font-medium text-[#6B7280]">
         <a href="./pages/features.html" class="hover:text-[#1C1C1E] transition-colors">Features</a>
         <a href="./pages/pricing.html" class="hover:text-[#1C1C1E] transition-colors">Pricing</a>
       </div>
 
-      <!-- Main CTA Button -->
       <a href="./pages/pricing.html" class="bg-[#1C1C1E] text-[#FAFAF9] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#059669] transition-colors">
         Get Freelancer
       </a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <main class="flex-grow">
+    <!-- Hero Section -->
     <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
       <span class="font-mono text-xs text-[#059669] uppercase tracking-widest bg-[#059669]/10 px-3 py-1 rounded-full border border-[#059669]/20">
-        Freelance Business OS
+        Dark-Mode Business OS
       </span>
       <h1 class="font-serif text-5xl md:text-7xl font-normal tracking-tight mt-6 max-w-4xl mx-auto leading-[1.1]">
         The command center for your independent business.
@@ -44,7 +41,7 @@
         Replace scattered spreadsheets, notes apps, and invoicing tools with a single, sleek dashboard built specifically for freelancers and micro-studios.
       </p>
       
-      <!-- Live App Mockup Card -->
+      <!-- Live Interactive CSS App Mockup -->
       <div class="mt-12 text-left rounded-xl bg-[#09090B] border border-white/10 p-6 shadow-2xl text-white max-w-4xl mx-auto">
         <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono text-zinc-400">
           <div class="flex items-center space-x-2">
@@ -76,34 +73,19 @@
       </div>
     </section>
 
-    <!-- Value Proposition -->
-    <section class="border-t border-[#1C1C1E]/5 py-20 bg-[#F5F4F2]/30">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="font-serif text-3xl md:text-4xl text-center mb-16">Everything you need to run a solo studio.</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-            <span class="font-mono text-xs text-[#6B7280]">01 / FINANCIALS</span>
-            <h3 class="font-serif text-xl mt-3 mb-2">Invoices & Tax Estimates</h3>
-            <p class="text-sm text-[#6B7280]">Line-item invoices with PDF export and real-time tax hold calculations.</p>
-          </div>
-          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-            <span class="font-mono text-xs text-[#6B7280]">02 / CLIENTS & PROJECTS</span>
-            <h3 class="font-serif text-xl mt-3 mb-2">Integrated Client Files</h3>
-            <p class="text-sm text-[#6B7280]">Store contracts, credentials, and iPhone-style project lists side-by-side.</p>
-          </div>
-          <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5">
-            <span class="font-mono text-xs text-[#6B7280]">03 / SYSTEMS</span>
-            <h3 class="font-serif text-xl mt-3 mb-2">Live SOP Workflows</h3>
-            <p class="text-sm text-[#6B7280]">Turn strategy templates into live client-linked step-by-step checklists.</p>
-          </div>
-        </div>
+    <!-- Value Preview Strip -->
+    <section class="border-t border-[#1C1C1E]/5 py-16 bg-[#F5F4F2]/50">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="font-serif text-3xl mb-6">Built to streamline your entire client pipeline.</h2>
+        <a href="./pages/features.html" class="inline-flex items-center text-sm font-medium text-[#059669] hover:underline">
+          Explore full feature breakdown &rarr;
+        </a>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="border-t border-[#1C1C1E]/5 py-12 bg-[#F5F4F2]/50 text-xs text-[#6B7280]">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
       <p>© 2026 Freelancer OS. Designed for independent builders.</p>
       <div class="font-mono">v1.0.0 — Dark Mode Native</div>
     </div>
