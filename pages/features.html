@@ -4,139 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features — Rogue OS</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script>(function(){try{if(localStorage.getItem('sr-theme')==='dark')document.documentElement.classList.add('dark');}catch(e){}})();</script>
   <link rel="stylesheet" href="../css/styles.css">
   <!-- Load Centralized Sync Race Style Web Components -->
   <script src="../js/components.js" defer></script>
 </head>
-<body class="min-h-screen flex flex-col justify-between bg-[#FAFAF9] text-[#1C1C1E]">
+<body>
 
   <!-- Centralized Top Navigation Component -->
   <site-nav></site-nav>
 
-  <main class="max-w-6xl mx-auto px-6 py-20 flex-grow w-full">
-    <!-- Header -->
-    <div class="max-w-2xl mb-16">
-      <span class="font-mono text-xs text-[#059669] uppercase tracking-widest bg-[#059669]/10 px-3 py-1 rounded-full border border-[#059669]/20">
-        Modules & Capabilities
-      </span>
-      <h1 class="font-serif text-5xl mt-4">Built for deep work, not corporate bloat.</h1>
-      <p class="text-[#6B7280] mt-4">Every module inside Rogue OS replaces scattered third-party apps with a unified dark-mode workspace.</p>
-    </div>
-
-    <!-- Complete 11 Feature Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- 01. Dashboard -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">01 / OVERVIEW</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Dashboard</h2>
-          <p class="text-[#6B7280] text-sm">KPI cards (revenue, expenses, outstanding, active projects) with period filter. Overdue invoice alerts and quick action bar.</p>
-        </div>
+  <main>
+    <section class="page-top shell">
+      <div class="head">
+        <span class="kicker">Modules &amp; Capabilities</span>
+        <h1 style="font-size:clamp(2rem,4.5vw,3.2rem);">Built for deep work, not corporate bloat.</h1>
+        <p>Every module inside Rogue OS replaces scattered third-party apps with a unified dark-mode workspace.</p>
       </div>
 
-      <!-- 02. Clients -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">02 / CRM</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Clients</h2>
-          <p class="text-[#6B7280] text-sm">Client card grid with full client file — contact info, linked projects, invoices, and document storage (contracts, NDAs, content forms, service agreements).</p>
+      <div class="cards">
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">01 / OVERVIEW</span>
+          <h3>Dashboard</h3>
+          <p>KPI cards (revenue, expenses, outstanding, active projects) with period filter. Overdue invoice alerts and quick action bar.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">02 / CRM</span>
+          <h3>Clients</h3>
+          <p>Client card grid with full client file — contact info, linked projects, invoices, and document storage (contracts, NDAs, content forms, service agreements).</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">03 / MANAGEMENT</span>
+          <h3>Projects</h3>
+          <p>Project cards with status filter. Per-project file with description, budget, deadline, connection credentials, and an iPhone-style to-do list with priorities and due dates.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">04 / ACCOUNTING</span>
+          <h3>Finances</h3>
+          <p>Income/expense log with period filter, project/client linking, tax estimates, and per-project income breakdown.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">05 / BILLING</span>
+          <h3>Invoices</h3>
+          <p>Line-item invoices with PDF export (via jsPDF — no popup). Complete Draft &rarr; Sent &rarr; Paid / Void flow.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">06 / STRATEGY</span>
+          <h3>Business Plan</h3>
+          <p>Mission, vision, market, revenue model, SWOT analysis, and goals tracker (90-day / 1-year / 5-year) with plain-text export.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">07 / VAULT</span>
+          <h3>Bookmarks</h3>
+          <p>Website and tool manager with PIN-protected credential storage (email, username, password) and monthly cost tracking.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">08 / SAAS BURN</span>
+          <h3>Tech Stack</h3>
+          <p>Recurring subscription tracker — calculates monthly burn rate and annual total, grouped by category.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">09 / SYSTEMS</span>
+          <h3>Workflows</h3>
+          <p>Reusable SOP templates with ordered steps. Start a live "run" linked to a client or project and tick off steps with real-time notes.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">10 / IDEATION</span>
+          <h3>Brainstorm</h3>
+          <p>Guided thinking sessions (New Service Idea, Client Pitch, Quarterly Goals, Problem Solving) or free-form notes with tag filtering.</p>
+        </div>
+
+        <div class="card">
+          <span class="kicker" style="margin-bottom:0;">11 / SYSTEM CONFIG</span>
+          <h3>Account &amp; Settings</h3>
+          <p>Display name, business name, currency, tax rate, timezone, credential PIN setup, and password management.</p>
         </div>
       </div>
-
-      <!-- 03. Projects -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">03 / MANAGEMENT</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Projects</h2>
-          <p class="text-[#6B7280] text-sm">Project cards with status filter. Per-project file with description, budget, deadline, connection credentials, and an iPhone-style to-do list with priorities and due dates.</p>
-        </div>
-      </div>
-
-      <!-- 04. Finances -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">04 / ACCOUNTING</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Finances</h2>
-          <p class="text-[#6B7280] text-sm">Income/expense log with period filter, project/client linking, tax estimates, and per-project income breakdown.</p>
-        </div>
-      </div>
-
-      <!-- 05. Invoices -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">05 / BILLING</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Invoices</h2>
-          <p class="text-[#6B7280] text-sm">Line-item invoices with PDF export (via jsPDF — no popup). Complete Draft &rarr; Sent &rarr; Paid / Void flow.</p>
-        </div>
-      </div>
-
-      <!-- 06. Business Plan -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">06 / STRATEGY</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Business Plan</h2>
-          <p class="text-[#6B7280] text-sm">Mission, vision, market, revenue model, SWOT analysis, and goals tracker (90-day / 1-year / 5-year) with plain-text export.</p>
-        </div>
-      </div>
-
-      <!-- 07. Bookmarks -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">07 / VAULT</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Bookmarks</h2>
-          <p class="text-[#6B7280] text-sm">Website and tool manager with PIN-protected credential storage (email, username, password) and monthly cost tracking.</p>
-        </div>
-      </div>
-
-      <!-- 08. Tech Stack -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">08 / SAAS BURN</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Tech Stack</h2>
-          <p class="text-[#6B7280] text-sm">Recurring subscription tracker — calculates monthly burn rate and annual total, grouped by category.</p>
-        </div>
-      </div>
-
-      <!-- 09. Workflows -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">09 / SYSTEMS</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Workflows</h2>
-          <p class="text-[#6B7280] text-sm">Reusable SOP templates with ordered steps. Start a live "run" linked to a client or project and tick off steps with real-time notes.</p>
-        </div>
-      </div>
-
-      <!-- 10. Brainstorm -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">10 / IDEATION</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Brainstorm</h2>
-          <p class="text-[#6B7280] text-sm">Guided thinking sessions (New Service Idea, Client Pitch, Quarterly Goals, Problem Solving) or free-form notes with tag filtering.</p>
-        </div>
-      </div>
-
-      <!-- 11. Account & Settings -->
-      <div class="bg-[#F5F4F2] p-8 rounded-xl border border-[#1C1C1E]/5 flex flex-col justify-between">
-        <div>
-          <span class="font-mono text-xs text-[#059669]">11 / SYSTEM CONFIG</span>
-          <h2 class="font-serif text-2xl mt-2 mb-2">Account & Settings</h2>
-          <p class="text-[#6B7280] text-sm">Display name, business name, currency, tax rate, timezone, credential PIN setup, and password management.</p>
-        </div>
-      </div>
-
-    </div>
+    </section>
   </main>
 
   <!-- Centralized Footer Component -->
   <site-footer></site-footer>
-  
-<!-- Cookie Consent Banner -->
+
+  <!-- Cookie Consent Banner -->
   <cookie-consent></cookie-consent>
 
-</body>
-</html>
-  
 </body>
 </html>
